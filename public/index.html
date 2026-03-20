@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Ching - Free Online Divination</title>
+    <meta name="description" content="Get your free I Ching reading online. Cast coins to receive wisdom from the ancient Book of Changes.">
+    
+    <meta property="og:title" content="I Ching - Ancient Wisdom">
+    <meta property="og:description" content="Cast coins and receive wisdom from the 64 hexagrams of the I Ching.">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a1628'/><text x='16' y='23' font-size='18' text-anchor='middle' fill='%23ffd700'>☰</text></svg>">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>☰ I Ching</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#hexagrams">Hexagrams</a>
+                <a href="#pricing">Premium</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Seek Wisdom from the I Ching</h2>
+                <p class="hero-subtitle">The ancient Book of Changes reveals your path</p>
+                
+                <div class="question-section" id="question-section">
+                    <label for="question-input">What do you seek guidance on?</label>
+                    <textarea 
+                        id="question-input" 
+                        placeholder="Focus your mind on your question... (optional)"
+                        rows="3"
+                        maxlength="200"></textarea>
+                    <p class="char-count"><span id="char-count">0</span>/200</p>
+                </div>
+
+                <div class="casting-method">
+                    <h3>Cast Your Coins</h3>
+                    <div class="coins-container" id="coins-container">
+                        <div class="coin" id="coin1">
+                            <div class="coin-face heads">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#ffd700" stroke="#b8860b" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#8b6914">☰</text></svg>
+                            </div>
+                            <div class="coin-face tails">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#c0c0c0" stroke="#808080" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#404040">☷</text></svg>
+                            </div>
+                        </div>
+                        <div class="coin" id="coin2">
+                            <div class="coin-face heads">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#ffd700" stroke="#b8860b" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#8b6914">☰</text></svg>
+                            </div>
+                            <div class="coin-face tails">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#c0c0c0" stroke="#808080" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#404040">☷</text></svg>
+                            </div>
+                        </div>
+                        <div class="coin" id="coin3">
+                            <div class="coin-face heads">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#ffd700" stroke="#b8860b" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#8b6914">☰</text></svg>
+                            </div>
+                            <div class="coin-face tails">
+                                <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#c0c0c0" stroke="#808080" stroke-width="2"/><text x="30" y="38" text-anchor="middle" font-size="24" fill="#404040">☷</text></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="casting-instruction">Click to cast 6 times</p>
+                    <div class="casting-progress" id="casting-progress">
+                        <div class="progress-line" id="progress1"></div>
+                        <div class="progress-line" id="progress2"></div>
+                        <div class="progress-line" id="progress3"></div>
+                        <div class="progress-line" id="progress4"></div>
+                        <div class="progress-line" id="progress5"></div>
+                        <div class="progress-line" id="progress6"></div>
+                    </div>
+                </div>
+
+                <button class="btn-primary btn-cast" id="cast-btn">
+                    <span>Cast Coins</span>
+                </button>
+                <button class="btn-secondary btn-reset" id="reset-btn" style="display: none;">
+                    <span>Cast Again</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="hexagram-display" id="hexagram-display" style="display: none;">
+            <div class="container">
+                <h3 class="section-title">Your Hexagram</h3>
+                <div class="hexagram-result" id="hexagram-result">
+                </div>
+            </div>
+        </section>
+
+        <section class="reading-section" id="reading-section" style="display: none;">
+            <div class="container">
+                <div class="reading-content">
+                    <h3>Your Reading</h3>
+                    
+                    <div class="free-reading" id="free-reading">
+                        <div class="hexagram-meanings" id="hexagram-meanings">
+                        </div>
+                    </div>
+
+                    <div class="premium-upsell" id="premium-upsell">
+                        <h4>Want Deeper Insights?</h4>
+                        <p>Unlock AI-powered personalized interpretation</p>
+                        <ul class="premium-features">
+                            <li>✨ AI-generated personal guidance</li>
+                            <li>✨ Connection to your question</li>
+                            <li>✨ Line-by-line analysis</li>
+                            <li>✨ Custom affirmation</li>
+                        </ul>
+                        <button class="btn-premium" id="upgrade-btn">
+                            Get Premium Reading - $4.99
+                        </button>
+                    </div>
+
+                    <button class="btn-share" id="share-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                        Share My Reading
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section-light">
+            <div class="container">
+                <h2>How I Ching Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">🎯</div>
+                        <h3>Focus Your Mind</h3>
+                        <p>Hold your question in your heart as you cast</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🪙</div>
+                        <h3>Cast Three Coins</h3>
+                        <p>Six times to form a complete hexagram</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">📜</div>
+                        <h3>Receive Wisdom</h3>
+                        <p>Interpret the ancient wisdom revealed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hexagrams" class="hexagrams-info">
+            <div class="container">
+                <h2>The 64 Hexagrams</h2>
+                <p class="hexagrams-intro">Each hexagram represents a unique situation and guidance from the Tao.</p>
+                <div class="hexagrams-grid" id="hexagrams-grid">
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2>Pricing</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Free</h3>
+                        <div class="price">$0</div>
+                        <ul>
+                            <li>Coin casting simulation</li>
+                            <li>Basic hexagram meanings</li>
+                            <li>Unlimited readings</li>
+                            <li>Share readings</li>
+                        </ul>
+                        <button class="btn-secondary">Start Reading</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="badge">Most Popular</div>
+                        <h3>Premium</h3>
+                        <div class="price">$4.99</div>
+                        <ul>
+                            <li>AI-powered interpretations</li>
+                            <li>Personalized guidance</li>
+                            <li>Line-by-line analysis</li>
+                            <li>Custom affirmations</li>
+                            <li>Changing lines explained</li>
+                        </ul>
+                        <button class="btn-premium">Get Premium</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 I Ching Divination. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
