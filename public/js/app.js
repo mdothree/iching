@@ -1,4 +1,4 @@
-import { hexagrams, getHexagramByLines } from './js/services/database.js';
+import { hexagrams, getHexagramByLines } from './services/database.js';
 
 let currentLines = [];
 let isCasting = false;
@@ -9,6 +9,7 @@ const elements = {
     charCount: document.getElementById('char-count'),
     castBtn: document.getElementById('cast-btn'),
     resetBtn: document.getElementById('reset-btn'),
+    newReadingBtn: document.getElementById('new-reading-btn'),
     coinsContainer: document.getElementById('coins-container'),
     hexagramDisplay: document.getElementById('hexagram-display'),
     hexagramResult: document.getElementById('hexagram-result'),
@@ -16,7 +17,11 @@ const elements = {
     hexagramMeanings: document.getElementById('hexagram-meanings'),
     hexagramsGrid: document.getElementById('hexagrams-grid'),
     shareBtn: document.getElementById('share-btn'),
-    upgradeBtn: document.getElementById('upgrade-btn')
+    upgradeBtn: document.getElementById('upgrade-btn'),
+    premiumModal: document.getElementById('premium-modal'),
+    modalOverlay: document.getElementById('modal-overlay'),
+    modalClose: document.getElementById('modal-close'),
+    modalSkip: document.getElementById('modal-skip')
 };
 
 function init() {
@@ -30,6 +35,7 @@ function setupEventListeners() {
     
     elements.castBtn?.addEventListener('click', startCasting);
     elements.resetBtn?.addEventListener('click', resetCasting);
+    elements.newReadingBtn?.addEventListener('click', resetCasting);
     
     elements.coinsContainer?.addEventListener('click', (e) => {
         const coin = e.target.closest('.coin');
@@ -39,7 +45,25 @@ function setupEventListeners() {
     });
     
     elements.shareBtn?.addEventListener('click', shareReading);
-    elements.upgradeBtn?.addEventListener('click', showPremiumUpsell);
+    elements.upgradeBtn?.addEventListener('click', showPremiumModal);
+    
+    elements.modalOverlay?.addEventListener('click', hidePremiumModal);
+    elements.modalClose?.addEventListener('click', hidePremiumModal);
+    elements.modalSkip?.addEventListener('click', hidePremiumModal);
+}
+
+function showPremiumModal() {
+    if (elements.premiumModal) {
+        elements.premiumModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function hidePremiumModal() {
+    if (elements.premiumModal) {
+        elements.premiumModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 }
 
 function updateCharCount() {
@@ -116,21 +140,31 @@ async function castSingleLine() {
 
 function flipCoin(coin) {
     return new Promise((resolve) => {
-        coin.classList.add('flipping');
-        
         const isHeads = Math.random() > 0.5;
+        const finalValue = isHeads ? 5 : 4;
         
-        setTimeout(() => {
-            coin.classList.remove('flipping');
-            if (!isHeads) {
-                coin.querySelector('.coin-face.heads').style.transform = 'rotateY(180deg)';
-                coin.querySelector('.coin-face.tails').style.transform = 'rotateY(0deg)';
+        coin.style.transform = 'rotateX(0deg)';
+        coin.style.transition = 'none';
+        
+        let rotations = 0;
+        const maxRotations = 3;
+        const rotationDuration = 150;
+        
+        const animate = () => {
+            rotations++;
+            const flipValue = rotations % 2 === 1 ? 180 : 0;
+            coin.style.transform = `rotateX(${flipValue}deg)`;
+            coin.style.transition = `transform ${rotationDuration}ms ease-in-out`;
+            
+            if (rotations < maxRotations * 2) {
+                setTimeout(animate, rotationDuration);
             } else {
-                coin.querySelector('.coin-face.heads').style.transform = 'rotateY(0deg)';
-                coin.querySelector('.coin-face.tails').style.transform = 'rotateY(180deg)';
+                coin.style.transform = isHeads ? 'rotateX(0deg)' : 'rotateX(180deg)';
+                resolve(finalValue);
             }
-            resolve(isHeads ? 5 : 4);
-        }, 600);
+        };
+        
+        animate();
     });
 }
 
@@ -210,7 +244,7 @@ function resetCasting() {
 function renderHexagramsGrid() {
     if (!elements.hexagramsGrid) return;
     
-    const displayHexagrams = hexagrams.slice(0, 24);
+    const displayHexagrams = hexagrams;
     
     elements.hexagramsGrid.innerHTML = displayHexagrams.map(h => `
         <div class="hexagram-card" data-id="${h.id}">
@@ -291,7 +325,7 @@ Get your free reading at iching.mdo3d.com`;
 }
 
 function showPremiumUpsell() {
-    alert('Premium AI interpretation coming soon! This feature will provide personalized, AI-generated guidance based on your specific question.');
+    showPremiumModal();
 }
 
 function delay(ms) {
