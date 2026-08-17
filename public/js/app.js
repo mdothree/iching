@@ -1,8 +1,16 @@
 import { hexagrams, getHexagramByLines } from './services/database.js';
+import { firebaseConfig } from './config/firebase.js';
+
+// API Configuration
+const API_URL = window.location.hostname === 'localhost'
+  ? 'http://localhost:3005'
+  : 'https://iching-api.vercel.app';
 
 let currentLines = [];
+let currentHexagram = null;
 let isCasting = false;
 let castCount = 0;
+let isPremium = false;
 
 const elements = {
     questionInput: document.getElementById('question-input'),
@@ -327,6 +335,111 @@ Get your free reading at iching.mdo3d.com`;
 function showPremiumUpsell() {
     showPremiumModal();
 }
+
+// API Integration Functions
+async function getPremiumReading(hexagram, question) {
+    try {
+        const response = await fetch(`${API_URL}/api/reading/generate`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                hexagram,
+                question,
+                premium: true,
+                sessionId: window.PremiumEntitlement?.activeSessionId()
+            })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            return data.reading;
+        }
+        throw new Error(data.error || 'Failed to get reading');
+    } catch (error) {
+        console.error('API Error:', error);
+        return null;
+    }
+}
+
+function showPremiumReading(reading) {
+    if (!reading) return;
+
+    elements.hexagramMeanings.innerHTML = `
+        <div class="premium-reading">
+            <div class="premium-badge">AI-Powered Reading</div>
+
+            <div class="meaning-block">
+                <h4>Opening Reflection</h4>
+                <p>${reading.opening}</p>
+            </div>
+
+            <div class="meaning-block">
+                <h4>Hexagram Interpretation</h4>
+                <p>${reading.interpretation}</p>
+            </div>
+
+            ${reading.insights && reading.insights.length > 0 ? `
+            <div class="meaning-block">
+                <h4>Deep Insights</h4>
+                <ul class="insights-list">
+                    ${reading.insights.map(i => `<li>${i}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+
+            ${reading.actionSteps && reading.actionSteps.length > 0 ? `
+            <div class="meaning-block">
+                <h4>Practical Guidance</h4>
+                <ul class="action-steps">
+                    ${reading.actionSteps.map(s => `<li>${s}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+
+            <div class="meaning-block closing-wisdom">
+                <h4>Closing Wisdom</h4>
+                <p><em>"${reading.closingWisdom}"</em></p>
+            </div>
+        </div>
+    `;
+}
+
+async function handlePremiumPurchase() {
+    // A verified, unused purchase (recorded by success.html) delivers directly — no second charge.
+    if (window.PremiumEntitlement?.has()) {
+        const question = elements.questionInput?.value || 'Your general question';
+        const reading = await getPremiumReading(currentHexagram, question);
+        if (reading) { window.PremiumEntitlement.consume(); showPremiumReading(reading); return; }
+        alert('Your purchase is confirmed, but the reading service is temporarily unavailable. Please try again shortly — you will not be charged again.');
+        return;
+    }
+    const email = prompt('Enter your email to receive your premium reading:');
+    if (!email) return;
+
+    try {
+        const response = await fetch(`${API_URL}/api/payment/create-checkout`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                readingType: 'single-premium',
+                email
+            })
+        });
+
+        const data = await response.json();
+        if (data.success && data.checkoutUrl) {
+            window.location.href = data.checkoutUrl;
+        } else {
+            alert('Unable to process payment. Please try again.');
+        }
+    } catch (error) {
+        console.error('Payment error:', error);
+        alert('Payment error. Please try again.');
+    }
+}
+
+// Make premium purchase available globally
+window.handlePremiumPurchase = handlePremiumPurchase;
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
