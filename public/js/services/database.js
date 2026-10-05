@@ -1,3 +1,3 @@
-import { hexagrams, getHexagramById, getHexagramByLines } from '../../../src/ichingDatabase.js';
+import { hexagrams, getHexagramById, getHexagramByLines } from '../../src/ichingDatabase.js';
 
 export { hexagrams, getHexagramById, getHexagramByLines };
