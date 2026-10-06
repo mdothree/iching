@@ -274,7 +274,6 @@ header nav {
     cursor: pointer;
     transition: all 0.3s;
     font-family: inherit;
-    margin-left: 15px;
 }
 
 .btn-secondary:hover {
@@ -318,6 +317,12 @@ header nav {
     padding: 40px;
     border: 1px solid rgba(255, 215, 0, 0.2);
     text-align: center;
+}
+
+.hexagram-symbol,
+.hexagram-card .symbol {
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols 2', 'Noto Sans Symbols', sans-serif;
+    line-height: 1;
 }
 
 .hexagram-symbol {
@@ -433,6 +438,18 @@ header nav {
 .premium-features li {
     padding: 8px 0;
     color: var(--text);
+}
+
+.result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.result-actions .btn-share {
+    margin: 0;
 }
 
 .btn-share {
@@ -683,6 +700,13 @@ header nav {
     text-align: center;
     border: 1px solid rgba(255, 215, 0, 0.1);
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card > button {
+    margin-top: auto;
+    align-self: center;
 }
 
 .pricing-card.featured {
@@ -770,11 +794,51 @@ footer p {
         height: 45px;
     }
     
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .nav-links {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 18px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
     }
     
     .btn-cast, .btn-reset {
         width: 100%;
     }
+}
+
+/* Premium (paid) reading */
+.premium-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.insights-list,
+.action-steps {
+    padding-left: 1.4rem;
+    line-height: 1.8;
+}
+
+.insights-list li,
+.action-steps li {
+    margin-bottom: 8px;
+}
+
+.closing-wisdom {
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    padding-top: 20px;
 }
