@@ -749,14 +749,14 @@ export const hexagrams = [
     trigrams: { upper: "Earth", lower: "Thunder" },
     judgment: "Return judgment",
     keywords: ["return", "coming back", "spring", "renewal"],
-    rulingLine: "Without a君王, there is nothing that does not go wrong.",
+    rulingLine: "Without a ruler, there is nothing that does not go wrong.",
     lines: [
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong."
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong."
     ],
     upper: {
       brief: "Return brings new beginnings.",
@@ -781,14 +781,14 @@ export const hexagrams = [
     trigrams: { upper: "Heaven", lower: "Thunder" },
     judgment: "Innocence judgment",
     keywords: ["innocence", "without deception", "naturalness", "truth"],
-    rulingLine: "Without a君王, there is nothing that does not go wrong.",
+    rulingLine: "Without a ruler, there is nothing that does not go wrong.",
     lines: [
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong.",
-      "Without a君王, there is nothing that does not go wrong."
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong.",
+      "Without a ruler, there is nothing that does not go wrong."
     ],
     upper: {
       brief: "Innocence and naturalness bring success.",
@@ -1176,7 +1176,7 @@ export const hexagrams = [
     ],
     upper: {
       brief: "Family requires order and nurturing.",
-      meaning: "Wind来源于 fire—stewardship and nourishment. Family requires proper roles and mutual care to flourish.",
+      meaning: "Wind comes forth from fire—stewardship and nourishment. Family requires proper roles and mutual care to flourish.",
       guidance: "Nurture your family. Establish order with love. The family that nourishes thrives."
     },
     lower: {
