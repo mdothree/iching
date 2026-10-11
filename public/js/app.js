@@ -535,7 +535,8 @@ async function handlePremiumPurchase() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 readingType: 'single-premium',
-                email
+                email,
+                attribution: window.MdoAttribution?.get()
             })
         });
 
