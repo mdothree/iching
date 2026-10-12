@@ -418,7 +418,7 @@ Core Meaning: ${hexagram.upper.brief}
 
 Guidance: ${hexagram.upper.guidance}
 
-Get your free reading at iching.mdo3d.com`;
+Get your reading at iching.mdo3d.com`;
     
     if (navigator.share) {
         navigator.share({
