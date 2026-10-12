@@ -13,6 +13,12 @@ let currentChangingLines = []; // 1-based positions of changing (6 or 9) lines
 let isCasting = false;
 let castCount = 0;
 let isPremium = false;
+// Set when the API refuses the stored purchase (402/403) so checkout is offered.
+let entitlementRejected = false;
+
+function hasPurchase() {
+    return !entitlementRejected && window.PremiumEntitlement?.has() === true;
+}
 
 const elements = {
     questionInput: document.getElementById('question-input'),
@@ -104,7 +110,9 @@ function restorePendingReading() {
         castCount = 6;
         updateProgress();
         elements.castBtn.style.display = 'none';
+        // showReading() delivers the paid reading itself when a credit exists.
         showHexagram();
+        return;
     } else if (saved.hexagramId) {
         showQuickHexagram(saved.hexagramId);
     } else {
@@ -234,7 +242,6 @@ function flipCoin(coin) {
     });
 }
 
-const LINE_NAMES = ['bottom', 'second', 'third', 'fourth', 'fifth', 'top'];
 
 function renderHexagramCard(hexagram) {
     elements.hexagramResult.innerHTML = `
@@ -272,43 +279,29 @@ function showHexagram() {
     elements.hexagramDisplay.scrollIntoView({ behavior: 'smooth' });
 }
 
+// Paid from first use (JARVIS #94): the cast hexagram's reading is the paid AI
+// interpretation. With a verified purchase it is delivered here; without one,
+// only the checkout prompt shows. (Browsing the hexagram library stays public.)
 function showReading(hexagram) {
-    const question = (elements.questionInput?.value || '').trim();
-
-    let changingBlock = '';
-    if (currentChangingLines.length > 0) {
-        // Changing lines flip (old yang 9 -> yin, old yin 6 -> yang) to form the relating hexagram.
-        const relating = getHexagramByLines(currentValues.map(v => (v === 9 ? 0 : v === 6 ? 1 : v % 2)));
-        const names = currentChangingLines.map(n => LINE_NAMES[n - 1]).join(', ');
-        changingBlock = `
-        <div class="meaning-block">
-            <h4>Changing Lines</h4>
-            <p>Your ${names} line${currentChangingLines.length > 1 ? 's are' : ' is'} changing.${relating ? ` The situation is moving toward <strong>Hexagram ${relating.id}: ${relating.name}</strong> (${relating.chinese}) — ${relating.upper.brief}` : ''}</p>
-        </div>`;
-    }
-    
-    elements.hexagramMeanings.innerHTML = `
-        ${question ? `<div class="meaning-block">
-            <h4>Your Question</h4>
-            <p><em>${esc(question)}</em></p>
-        </div>` : ''}
-        <div class="meaning-block">
-            <h4>Core Meaning</h4>
-            <p>${hexagram.upper.meaning}</p>
-        </div>
-        <div class="meaning-block">
-            <h4>Guidance</h4>
-            <p>${hexagram.upper.guidance}</p>
-        </div>
-        ${changingBlock}
-        <div class="meaning-block">
-            <h4>The Image</h4>
-            <p><em>"${hexagram.image}"</em></p>
-        </div>
-    `;
-    
-    if (elements.premiumUpsell) elements.premiumUpsell.style.display = '';
+    entitlementRejected = false;
+    elements.hexagramMeanings.innerHTML = '';
+    if (elements.premiumUpsell) elements.premiumUpsell.style.display = hasPurchase() ? 'none' : '';
     elements.readingSection.style.display = 'block';
+    if (hasPurchase()) deliverPaidReading();
+}
+
+async function deliverPaidReading() {
+    elements.hexagramMeanings.innerHTML = '<p>✨ Channeling your AI reading...</p>';
+    const question = elements.questionInput?.value || 'Your general question';
+    const reading = await getPremiumReading(currentHexagram, question, currentChangingLines);
+    if (reading) { window.PremiumEntitlement.consume(); showPremiumReading(reading); return; }
+    if (entitlementRejected) {
+        // The purchase on this device was used up: offer checkout again.
+        elements.hexagramMeanings.innerHTML = '';
+        if (elements.premiumUpsell) elements.premiumUpsell.style.display = '';
+        return;
+    }
+    elements.hexagramMeanings.innerHTML = '<p>Your purchase is confirmed, but the reading service is temporarily unavailable. Please try again shortly — you will not be charged again.</p>';
 }
 
 function resetCoins() {
@@ -451,6 +444,10 @@ async function getPremiumReading(hexagram, question, changingLines) {
             })
         });
 
+        if (response.status === 402 || response.status === 403) {
+            entitlementRejected = true;
+            return null;
+        }
         const data = await response.json();
         if (data.success) {
             return data.reading;
@@ -514,17 +511,15 @@ function showPremiumReading(reading) {
 async function handlePremiumPurchase() {
     hidePremiumModal();
     // A verified, unused purchase (recorded by success.html) delivers directly — no second charge.
-    if (window.PremiumEntitlement?.has()) {
+    if (hasPurchase()) {
         if (!currentHexagram) {
             alert('Your premium credit is ready. Cast your coins first, then choose "Get Premium Reading" to use it.');
             document.getElementById('question-section')?.scrollIntoView({ behavior: 'smooth' });
             return;
         }
-        const question = elements.questionInput?.value || 'Your general question';
-        const reading = await getPremiumReading(currentHexagram, question, currentChangingLines);
-        if (reading) { window.PremiumEntitlement.consume(); showPremiumReading(reading); return; }
-        alert('Your purchase is confirmed, but the reading service is temporarily unavailable. Please try again shortly — you will not be charged again.');
-        return;
+        elements.readingSection.style.display = 'block';
+        await deliverPaidReading();
+        if (!entitlementRejected) return;
     }
     const email = prompt('Enter your email to receive your premium reading:');
     if (!email) return;
