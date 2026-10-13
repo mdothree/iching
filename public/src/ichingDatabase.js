@@ -10,17 +10,8 @@ export const hexagrams = [
     chinese: "乾",
     symbol: "䷀",
     trigrams: { upper: "Heaven", lower: "Heaven" },
-    judgment: "Creative judgment",
     keywords: ["creation", "strength", "power", "pure yang"],
     rulingLine: "The dragon hides in the deep. The great person initiates and completes.",
-    lines: [
-      "Hidden dragon. Do not act.",
-      "Dragon appears in the field. It furthers one to see the great person.",
-      "All day long the dragon is in the field. Misfortune.",
-      "Dragon leaps in the depths. No blame.",
-      "Flying dragon in the heavens. It furthers one to see the great person.",
-      "Proud dragon exceeds. Regret."
-    ],
     upper: {
       brief: "Pure yang energy and creative power.",
       meaning: "The Creative is the supreme success. It represents pure yang energy, creativity, and the power of creation. This is a time of great strength and potential.",
@@ -42,17 +33,8 @@ export const hexagrams = [
     chinese: "坤",
     symbol: "䷁",
     trigrams: { upper: "Earth", lower: "Earth" },
-    judgment: "Receptive judgment",
     keywords: ["reception", "devotion", "patience", "pure yin"],
     rulingLine: "The great personinitiates and completes.",
-    lines: [
-      "When frost comes, then ice arrives.",
-      "Straight, square, great. Without limitation, the king on firm ground. It furthers.",
-      "Hidden lines. One is able to remain perseverant.",
-      "Closed graph. No blame.",
-      "Yellow graph is most central and correct. Auspicious.",
-      "Dragons fight in the depths. Blood is black and yellow."
-    ],
     upper: {
       brief: "Pure yin energy and receptive power.",
       meaning: "The Receptive represents pure yin energy, receptivity, and devotion. Success comes through following and supporting, not leading.",
@@ -74,17 +56,8 @@ export const hexagrams = [
     chinese: "屯",
     symbol: "䷂",
     trigrams: { upper: "Water", lower: "Thunder" },
-    judgment: "Difficulty judgment",
     keywords: ["difficulty", "beginning", "confusion", "sprouting"],
     rulingLine: "Nine in the fifth place brings good fortune. No blame.",
-    lines: [
-      "Hesitation and inconvenience. It furthers one to have somewhere to go. It furthers one to remain perseverant.",
-      "Difficult and tangled. It furthers one to be perseverant and firm.",
-      "Hunting for game. Nothing is caught. One is covered with graph. Fortune.",
-      "Turn back, do not go forward. Turn back, it furthers one to master the strong.",
-      "Give yourself to difficulties. No blame. Perseverance brings good fortune.",
-      "Red graph is most central and correct. Auspicious."
-    ],
     upper: {
       brief: "Obstacles at the beginning of a journey.",
       meaning: "Difficulty at the beginning. Like seeds struggling to sprout, obstacles must be overcome before progress is possible.",
@@ -106,17 +79,8 @@ export const hexagrams = [
     chinese: "蒙",
     symbol: "䷃",
     trigrams: { upper: "Mountain", lower: "Water" },
-    judgment: "Youth judgment",
     keywords: ["youth", "folly", "ignorance", "education"],
     rulingLine: "Nine in the second place brings good fortune. No blame.",
-    lines: [
-      "To develop and not to control. One goes into graph. It furthers one to have somewhere to go.",
-      "One accepts to be taught. Give instruction. There is no blame. Fortune.",
-      "Woman makes an error. It is not beneficial to do anything.",
-      "It is pitiable. One is confined in graph. Fortune.",
-      "A child is in a pit. One must act in time. No blame.",
-      "Do not beat the drums. One makes a mistake. Fortune."
-    ],
     upper: {
       brief: "Youth and learning require guidance.",
       meaning: "Youth and folly must be guided by wisdom. Learning requires humility and a willing teacher.",
@@ -138,17 +102,8 @@ export const hexagrams = [
     chinese: "需",
     symbol: "䷄",
     trigrams: { upper: "Water", lower: "Heaven" },
-    judgment: "Waiting judgment",
     keywords: ["waiting", "nourishment", "patience", "cloud"],
     rulingLine: "No blame. It furthers one to have somewhere to go. Good fortune.",
-    lines: [
-      "One waits outside the graph. It furthers one to be perseverant in remaining. Danger.",
-      "One waits inside the graph. It furthers one to master the strong. It furthers one to have somewhere to go.",
-      "One waits inside the graph. Danger. No blame. One is covered with graph.",
-      "It furthers one to have somewhere to go. One sits by the graph.",
-      "It furthers one to have somewhere to go. It furthers one to entertain guests.",
-      "One enters one's graph. It furthers one to entertain guests."
-    ],
     upper: {
       brief: "Patience and nourishment before action.",
       meaning: "Waiting requires patience and nourishment. Like clouds holding rain, you must wait for the right moment.",
@@ -170,17 +125,8 @@ export const hexagrams = [
     chinese: "讼",
     symbol: "䷅",
     trigrams: { upper: "Heaven", lower: "Water" },
-    judgment: "Conflict judgment",
     keywords: ["conflict", "lawsuit", "dispute", "confrontation"],
     rulingLine: "If one does not win, one returns and does not go forward.",
-    lines: [
-      "Conflict is not yet ended.",
-      "One cannot conflict. One returns and does violence. Fortune.",
-      "In diet, one accepts the conflict. Good fortune.",
-      "One cannot conflict. One returns and does not go forward. No blame. A string of broken jade.",
-      "Conflict is most central and correct. Good fortune.",
-      "By listening to the petition, one may be relieved."
-    ],
     upper: {
       brief: "Conflict requires careful judgment.",
       meaning: "Conflict arises when parties stand in opposition. Careful judgment and restraint are needed to navigate disputes.",
@@ -202,17 +148,8 @@ export const hexagrams = [
     chinese: "师",
     symbol: "䷆",
     trigrams: { upper: "Earth", lower: "Water" },
-    judgment: "Army judgment",
     keywords: ["army", "discipline", "mass", "leadership"],
     rulingLine: "In the end, good fortune comes.",
-    lines: [
-      "An army sets out in order. If the orders are not harmonious, the army is not well organized.",
-      "In the middle of the army. Good fortune. No blame.",
-      "The army may be in the field. It furthers one to be resolute.",
-      "The army is in the field. No blame.",
-      "The head of the army should have the turtle. No blame.",
-      "The great ruler comes. It furthers one to make an announcement."
-    ],
     upper: {
       brief: "Disciplined collective action.",
       meaning: "An army requires disciplined leadership and collective purpose. Order and structure bring victory.",
@@ -234,17 +171,8 @@ export const hexagrams = [
     chinese: "比",
     symbol: "䷇",
     trigrams: { upper: "Water", lower: "Earth" },
-    judgment: "Union judgment",
     keywords: ["union", "comparison", "alliance", "harmony"],
     rulingLine: "Good fortune comes. No blame.",
-    lines: [
-      "There is a great person. There is a small person. The great person unites the people.",
-      "The great person unites the people. The small person unites the people.",
-      "One unites with the wrong people. Not blameless.",
-      "One seeks union with one's own. One should not be unsettled.",
-      "The king sets up the son of heaven. The great person unites the people.",
-      "One cannot unite with anyone."
-    ],
     upper: {
       brief: "Unity and comparison bring guidance.",
       meaning: "Union comes through comparison and choosing the right allies. Unity requires mutual respect and shared values.",
@@ -266,17 +194,8 @@ export const hexagrams = [
     chinese: "小畜",
     symbol: "䷈",
     trigrams: { upper: "Wind", lower: "Heaven" },
-    judgment: "Small Taming judgment",
     keywords: ["taming", "restraint", "small power", "accumulation"],
     rulingLine: "The rain covers the roof. It is past.",
-    lines: [
-      "It furthers one to have somewhere to go. It furthers one to remain perseverant.",
-      "It furthers one to have somewhere to go. It furthers one to remain perseverant.",
-      "The rain falls. It furthers one to have somewhere to go. No blame.",
-      "The rain is partial. One gets rid of what is above. One is free of worry.",
-      "One takes a companion. No blame.",
-      "The moon is almost full. One's own side is winning."
-    ],
     upper: {
       brief: "Small power tames through restraint.",
       meaning: "Like wind gathering beneath heaven, small accumulated power can bring gentle change. Patience and restraint are needed.",
@@ -298,17 +217,8 @@ export const hexagrams = [
     chinese: "履",
     symbol: "䷉",
     trigrams: { upper: "Heaven", lower: "Lake" },
-    judgment: "Treading judgment",
     keywords: ["treading", "conduct", "stepping carefully", "etiquette"],
     rulingLine: "A man of ability treads but does not tread heavily.",
-    lines: [
-      "Simple conduct. Treading on the tail of the tiger. One is frightened but reaches the goal.",
-      "Treading on smooth ground. One is not equal to the tiger.",
-      "The tiger looks. One is the eye of the blind.",
-      "Treading the tail of the tiger. Danger. One is finally without blame.",
-      "The tiger looks. One is the eye of the blind.",
-      "Observe the treading, and the result is good fortune."
-    ],
     upper: {
       brief: "Careful conduct avoids danger.",
       meaning: "Treading carefully, even on dangerous ground, leads to success. Proper conduct and awareness are essential.",
@@ -330,17 +240,8 @@ export const hexagrams = [
     chinese: "泰",
     symbol: "䷊",
     trigrams: { upper: "Earth", lower: "Heaven" },
-    judgment: "Peace judgment",
     keywords: ["peace", "harmony", "prosperity", "union"],
     rulingLine: "When the small goes away, great comes.",
-    lines: [
-      "When the small goes away, great comes.",
-      "Endurance is beneficial. The small goes away.",
-      "There is no one who does not benefit.",
-      "The great comes in small waves. The small goes away in big waves.",
-      "The great comes in great waves. One is not confused.",
-      "The great comes in big waves. The small goes away."
-    ],
     upper: {
       brief: "Peace and harmony bring prosperity.",
       meaning: "Heaven below earth creates harmony and peace. The small and great find balance. A time of prosperity and union.",
@@ -362,18 +263,8 @@ export const hexagrams = [
     chinese: "否",
     symbol: "䷋",
     trigrams: { upper: "Heaven", lower: "Earth" },
-    judgment: "Standstill judgment",
     keywords: ["standstill", "stagnation", "blockage", "decline"],
     rulingLine: "When the great man stirs, the small man is destroyed.",
-    lines: [
-      "When the great man stirs, the small man is destroyed.",
-      "The great man stirs. The small man is destroyed.",
-      "The small man is destroyed by the great man.",
-      "The small man is destroyed by the great man.",
-      "The great man is destroyed by the small man.",
-      "When heaven and earth do not unite, the four seasons do not keep order.",
-      "When heaven and earth unite, the four seasons keep order."
-    ],
     upper: {
       brief: "Stagnation and blockage obscure truth.",
       meaning: "When heaven and earth are separated, nothing prospers. This is a time of standstill and obstruction.",
@@ -395,17 +286,8 @@ export const hexagrams = [
     chinese: "同人",
     symbol: "䷌",
     trigrams: { upper: "Heaven", lower: "Fire" },
-    judgment: "Fellowship judgment",
     keywords: ["fellowship", "community", "sun", "openness"],
     rulingLine: "The great man unites the people. Good fortune.",
-    lines: [
-      "The great man unites the people. Good fortune.",
-      "The great man unites the people. The small man unites the people.",
-      "One buries one's own in the mountain.",
-      "One climbs to the top of the mountain.",
-      "One unites with one's own within the city.",
-      "The great man unites the people."
-    ],
     upper: {
       brief: "Fellowship in the open brings success.",
       meaning: "Like the sun shining over the world, true fellowship requires openness and equality. The great person unites all.",
@@ -427,17 +309,8 @@ export const hexagrams = [
     chinese: "大有",
     symbol: "䷍",
     trigrams: { upper: "Fire", lower: "Heaven" },
-    judgment: "Great Possession judgment",
     keywords: ["possession", "abundance", "fire", "riches"],
     rulingLine: "The great man unites the people. Good fortune.",
-    lines: [
-      "No blame.",
-      "There is a great possession. No blame.",
-      "A small possession. One is covered with graph. No blame.",
-      "No blame. It furthers one to have somewhere to go.",
-      "The great man unites the people. Good fortune.",
-      "The great man shows himself. Good fortune."
-    ],
     upper: {
       brief: "Great possession requires great virtue.",
       meaning: "Fire above heaven illuminates all. Great possession comes through virtue and generosity, not greed.",
@@ -459,17 +332,8 @@ export const hexagrams = [
     chinese: "谦",
     symbol: "䷎",
     trigrams: { upper: "Earth", lower: "Mountain" },
-    judgment: "Modesty judgment",
     keywords: ["modesty", "humility", "spring", "serving"],
     rulingLine: "The modest mountain is humble.",
-    lines: [
-      "The modest mountain is humble.",
-      "The modest mountain is humble. It furthers one to have somewhere to go.",
-      "The modest mountain is humble. No blame.",
-      "The modest mountain is humble. No blame.",
-      "The modest mountain is humble. It furthers one to have somewhere to go.",
-      "The modest mountain is humble. Good fortune."
-    ],
     upper: {
       brief: "Modesty brings good fortune.",
       meaning: "The mountain hidden beneath the earth represents modesty. Humble service and restraint bring success.",
@@ -491,17 +355,8 @@ export const hexagrams = [
     chinese: "豫",
     symbol: "䷏",
     trigrams: { upper: "Thunder", lower: "Earth" },
-    judgment: "Enthusiasm judgment",
     keywords: ["enthusiasm", "excitement", "thunder", "joy"],
     rulingLine: "Enthusiasm vibrates to heaven.",
-    lines: [
-      "Enthusiasm vibrates to heaven.",
-      "Enthusiasm vibrates to heaven.",
-      "Enthusiasm vibrates to heaven. No blame.",
-      "Enthusiasm vibrates to heaven. One's own side is winning.",
-      "Enthusiasm vibrates to heaven. One is destroyed.",
-      "Enthusiasm vibrates to heaven. One's own side is destroyed."
-    ],
     upper: {
       brief: "Enthusiasm and joy attract followers.",
       meaning: "Thunder rises from the earth with joy. Enthusiasm inspires and attracts. A time of excitement and followers.",
@@ -523,17 +378,8 @@ export const hexagrams = [
     chinese: "随",
     symbol: "䷐",
     trigrams: { upper: "Lake", lower: "Thunder" },
-    judgment: "Following judgment",
     keywords: ["following", "flexibility", "lake", "accordance"],
     rulingLine: "Sincerity and accord bring good fortune.",
-    lines: [
-      "Sincerity and accord bring good fortune. No blame.",
-      "Sincerity and accord bring good fortune. No blame.",
-      "Sincerity and accord bring good fortune. No blame.",
-      "Sincerity and accord bring good fortune. No blame.",
-      "Sincerity and accord bring good fortune. No blame.",
-      "Sincerity and accord bring good fortune. No blame."
-    ],
     upper: {
       brief: "Following with sincerity brings reward.",
       meaning: "Lake rests beneath thunder, providing flexibility. Following with sincerity and accord brings freedom from blame.",
@@ -555,17 +401,8 @@ export const hexagrams = [
     chinese: "蛊",
     symbol: "䷑",
     trigrams: { upper: "Mountain", lower: "Wind" },
-    judgment: "Work on Decay judgment",
     keywords: ["decay", "corruption", "reform", "remediation"],
     rulingLine: "Your own fault. This is serious.",
-    lines: [
-      "Your own fault. This is serious.",
-      "Your own fault. This is serious.",
-      "Your own fault. This is serious.",
-      "Your own fault. This is serious.",
-      "Your own fault. This is serious.",
-      "Your own fault. This is serious."
-    ],
     upper: {
       brief: "Decay must be worked on and remedied.",
       meaning: "Wind beneath the mountain stirs decay that has set in. Decay must be addressed before reform can begin.",
@@ -587,17 +424,8 @@ export const hexagrams = [
     chinese: "临",
     symbol: "䷒",
     trigrams: { upper: "Earth", lower: "Lake" },
-    judgment: "Approach judgment",
     keywords: ["approach", "nearing", "dominance", "advance"],
     rulingLine: "The approaching ruler is favored by the people.",
-    lines: [
-      "The approaching ruler is favored by the people.",
-      "The approaching ruler is favored by the people.",
-      "The approaching ruler is favored by the people.",
-      "The approaching ruler is favored by the people.",
-      "The approaching ruler is favored by the people.",
-      "The approaching ruler is favored by the people."
-    ],
     upper: {
       brief: "Approach brings dominion and favor.",
       meaning: "Lake above earth approaches with gentle dominion. Approaching with wisdom and favor brings success.",
@@ -619,17 +447,8 @@ export const hexagrams = [
     chinese: "观",
     symbol: "䷓",
     trigrams: { upper: "Wind", lower: "Earth" },
-    judgment: "Contemplation judgment",
     keywords: ["contemplation", "viewing", "observation", "spectatorship"],
     rulingLine: "The contemplator is as if looking at himself.",
-    lines: [
-      "The contemplator is as if looking at himself.",
-      "The contemplator is as if looking at himself.",
-      "The contemplator is as if looking at himself.",
-      "The contemplator is as if looking at himself.",
-      "The contemplator is as if looking at himself.",
-      "The contemplator is as if looking at himself."
-    ],
     upper: {
       brief: "Contemplation reveals truth.",
       meaning: "Wind moves over the earth, observing all. True contemplation reveals what is hidden. The sage views and corrects.",
@@ -651,17 +470,8 @@ export const hexagrams = [
     chinese: "噬嗑",
     symbol: "䷔",
     trigrams: { upper: "Fire", lower: "Thunder" },
-    judgment: "Biting Through judgment",
     keywords: ["biting", "chewing", "justice", "enforcement"],
     rulingLine: "The policeman carries a staff and breaks the car.",
-    lines: [
-      "The policeman carries a staff and breaks the car.",
-      "The policeman carries a staff and breaks the car.",
-      "The policeman carries a staff and breaks the car.",
-      "The policeman carries a staff and breaks the car.",
-      "The policeman carries a staff and breaks the car.",
-      "The policeman carries a staff and breaks the car."
-    ],
     upper: {
       brief: "Bite through obstacles with justice.",
       meaning: "Thunder and fire create a biting force. Must bite through resistance to achieve justice. Law enforcement.",
@@ -683,17 +493,8 @@ export const hexagrams = [
     chinese: "贲",
     symbol: "䷕",
     trigrams: { upper: "Mountain", lower: "Fire" },
-    judgment: "Grace judgment",
     keywords: ["grace", "adornment", "beauty", "decoration"],
     rulingLine: "A man does not eat his own flour. Good fortune.",
-    lines: [
-      "A man does not eat his own flour. Good fortune.",
-      "A man does not eat his own flour. Good fortune.",
-      "A man does not eat his own flour. Good fortune.",
-      "A man does not eat his own flour. Good fortune.",
-      "A man does not eat his own flour. Good fortune.",
-      "A man does not eat his own flour. Good fortune."
-    ],
     upper: {
       brief: "Grace and adornment have their place.",
       meaning: "Fire illuminates the mountain with beauty. Grace and adornment enhance when they don't overwhelm substance.",
@@ -715,17 +516,8 @@ export const hexagrams = [
     chinese: "剥",
     symbol: "䷖",
     trigrams: { upper: "Mountain", lower: "Earth" },
-    judgment: "Splitting Apart judgment",
     keywords: ["splitting", "peeling", "decay", "disintegration"],
     rulingLine: "A slice of melon covered with graph. No blame.",
-    lines: [
-      "A slice of melon covered with graph. No blame.",
-      "A slice of melon covered with graph. No blame.",
-      "A slice of melon covered with graph. No blame.",
-      "A slice of melon covered with graph. No blame.",
-      "A slice of melon covered with graph. No blame.",
-      "A slice of melon covered with graph. No blame."
-    ],
     upper: {
       brief: "Peel away decay to find truth.",
       meaning: "The mountain crumbles into the earth. Things must split apart before they can be rebuilt. Strip away the false.",
@@ -747,17 +539,8 @@ export const hexagrams = [
     chinese: "复",
     symbol: "䷗",
     trigrams: { upper: "Earth", lower: "Thunder" },
-    judgment: "Return judgment",
     keywords: ["return", "coming back", "spring", "renewal"],
     rulingLine: "Without a ruler, there is nothing that does not go wrong.",
-    lines: [
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong."
-    ],
     upper: {
       brief: "Return brings new beginnings.",
       meaning: "Thunder emerges from the earth—the return of spring. Things return to their source. New cycles begin.",
@@ -779,17 +562,8 @@ export const hexagrams = [
     chinese: "无妄",
     symbol: "䷘",
     trigrams: { upper: "Heaven", lower: "Thunder" },
-    judgment: "Innocence judgment",
     keywords: ["innocence", "without deception", "naturalness", "truth"],
     rulingLine: "Without a ruler, there is nothing that does not go wrong.",
-    lines: [
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong.",
-      "Without a ruler, there is nothing that does not go wrong."
-    ],
     upper: {
       brief: "Innocence and naturalness bring success.",
       meaning: "Heaven moves thunder without deception. True innocence is naturalness—acting without ulterior motive.",
@@ -811,17 +585,8 @@ export const hexagrams = [
     chinese: "大畜",
     symbol: "䷙",
     trigrams: { upper: "Mountain", lower: "Heaven" },
-    judgment: "Great Taming judgment",
     keywords: ["taming", "restraining", "great strength", "storing"],
     rulingLine: "The great man tames the wild.",
-    lines: [
-      "The great man tames the wild.",
-      "The great man tames the wild.",
-      "The great man tames the wild.",
-      "The great man tames the wild.",
-      "The great man tames the wild.",
-      "The great man tames the wild."
-    ],
     upper: {
       brief: "Great power tamed serves great purpose.",
       meaning: "Heaven rises above the lake. Great power can be restrained and stored for greater purpose. Master yourself.",
@@ -843,17 +608,8 @@ export const hexagrams = [
     chinese: "颐",
     symbol: "䷚",
     trigrams: { upper: "Mountain", lower: "Thunder" },
-    judgment: "Corners of the Mouth judgment",
     keywords: ["nourishment", "eating", "speech", "mouth"],
     rulingLine: "Perseverance brings good fortune.",
-    lines: [
-      "Perseverance brings good fortune.",
-      "Perseverance brings good fortune.",
-      "Perseverance brings good fortune.",
-      "Perseverance brings good fortune.",
-      "Perseverance brings good fortune.",
-      "Perseverance brings good fortune."
-    ],
     upper: {
       brief: "Nourishment sustains life.",
       meaning: "Thunder echoes between mountains, giving voice. The mouth feeds the body, speech feeds the soul. Nourishment is essential.",
@@ -875,17 +631,8 @@ export const hexagrams = [
     chinese: "大过",
     symbol: "䷛",
     trigrams: { upper: "Lake", lower: "Wind" },
-    judgment: "Great Exceeding judgment",
     keywords: ["exceeding", "great surpassing", "decay", "collapse"],
     rulingLine: "A tree fills the house. One should not build a house.",
-    lines: [
-      "A tree fills the house. One should not build a house.",
-      "A tree fills the house. One should not build a house.",
-      "A tree fills the house. One should not build a house.",
-      "A tree fills the house. One should not build a house.",
-      "A tree fills the house. One should not build a house.",
-      "A tree fills the house. One should not build a house."
-    ],
     upper: {
       brief: "Great surpassing requires great sacrifice.",
       meaning: "Wind over lake exceeds normal bounds. Great excess requires decisive action. The beam bends before it breaks.",
@@ -907,17 +654,8 @@ export const hexagrams = [
     chinese: "坎",
     symbol: "䷜",
     trigrams: { upper: "Water", lower: "Water" },
-    judgment: "Abyss judgment",
     keywords: ["abyss", "water", "danger", "falling"],
     rulingLine: "A man comes out of the pit. No blame.",
-    lines: [
-      "A man comes out of the pit. No blame.",
-      "A man comes out of the pit. No blame.",
-      "A man comes out of the pit. No blame.",
-      "A man comes out of the pit. No blame.",
-      "A man comes out of the pit. No blame.",
-      "A man comes out of the pit. No blame."
-    ],
     upper: {
       brief: "Water fills the abyss—danger and perseverance.",
       meaning: "Water constantly flows into the abyss, filling it. Danger requires constant vigilance and perseverance.",
@@ -939,17 +677,8 @@ export const hexagrams = [
     chinese: "离",
     symbol: "䷝",
     trigrams: { upper: "Fire", lower: "Fire" },
-    judgment: "Clinging judgment",
     keywords: ["clinging", "fire", "brightness", "dependency"],
     rulingLine: "The great king lays siege to the cities.",
-    lines: [
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities."
-    ],
     upper: {
       brief: "Fire clings to its nature—brightness and beauty.",
       meaning: "Fire clings to what it consumes, giving light and warmth. Cling to virtue and truth, not destructively.",
@@ -971,17 +700,8 @@ export const hexagrams = [
     chinese: "咸",
     symbol: "䷞",
     trigrams: { upper: "Lake", lower: "Mountain" },
-    judgment: "Influence judgment",
     keywords: ["influence", "wooing", "marriage", "sensitivity"],
     rulingLine: "The movement of the heart is in the sixth place.",
-    lines: [
-      "The movement of the heart is in the sixth place.",
-      "The movement of the heart is in the sixth place.",
-      "The movement of the heart is in the sixth place.",
-      "The movement of the heart is in the sixth place.",
-      "The movement of the heart is in the sixth place.",
-      "The movement of the heart is in the sixth place."
-    ],
     upper: {
       brief: "Influence and receptivity create connection.",
       meaning: "Lake rests upon the mountain, influencing it. Mutual influence between hearts creates marriage and partnership.",
@@ -1003,17 +723,8 @@ export const hexagrams = [
     chinese: "恒",
     symbol: "䷟",
     trigrams: { upper: "Thunder", lower: "Wind" },
-    judgment: "Duration judgment",
     keywords: ["duration", "perseverance", "constancy", "lasting"],
     rulingLine: "Duration and perseverance bring good fortune.",
-    lines: [
-      "Duration and perseverance bring good fortune.",
-      "Duration and perseverance bring good fortune.",
-      "Duration and perseverance bring good fortune.",
-      "Duration and perseverance bring good fortune.",
-      "Duration and perseverance bring good fortune.",
-      "Duration and perseverance bring good fortune."
-    ],
     upper: {
       brief: "Duration brings success through constancy.",
       meaning: "Thunder and wind move together in eternal rhythm. Duration requires constancy and perseverance through changes.",
@@ -1035,17 +746,8 @@ export const hexagrams = [
     chinese: "遁",
     symbol: "䷠",
     trigrams: { upper: "Heaven", lower: "Mountain" },
-    judgment: "Retreat judgment",
     keywords: ["retreat", "withdrawal", "discretion", "escape"],
     rulingLine: "The great man retreats and does not act.",
-    lines: [
-      "The great man retreats and does not act.",
-      "The great man retreats and does not act.",
-      "The great man retreats and does not act.",
-      "The great man retreats and does not act.",
-      "The great man retreats and does not act.",
-      "The great man retreats and does not act."
-    ],
     upper: {
       brief: "Strategic retreat preserves strength.",
       meaning: "Heaven above the mountain retreats. The strong withdraw wisely. Discretion is the better part of valor.",
@@ -1067,17 +769,8 @@ export const hexagrams = [
     chinese: "大壮",
     symbol: "䷡",
     trigrams: { upper: "Thunder", lower: "Heaven" },
-    judgment: "Great Power judgment",
     keywords: ["great power", "strength", "might", "animal"],
     rulingLine: "The ram butts against the fence and gets stuck.",
-    lines: [
-      "The ram butts against the fence and gets stuck.",
-      "The ram butts against the fence and gets stuck.",
-      "The ram butts against the fence and gets stuck.",
-      "The ram butts against the fence and gets stuck.",
-      "The ram butts against the fence and gets stuck.",
-      "The ram butts against the fence and gets stuck."
-    ],
     upper: {
       brief: "Great power must be used with wisdom.",
       meaning: "Thunder rises above heaven—great power ascending. Raw strength requires wisdom to avoid self-destruction.",
@@ -1099,17 +792,8 @@ export const hexagrams = [
     chinese: "晋",
     symbol: "䷢",
     trigrams: { upper: "Fire", lower: "Earth" },
-    judgment: "Progress judgment",
     keywords: ["progress", "advancing", "brightness", "rising"],
     rulingLine: "The great king lays siege to the cities.",
-    lines: [
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities.",
-      "The great king lays siege to the cities."
-    ],
     upper: {
       brief: "Progress like the sun rising.",
       meaning: "Fire rises above earth, illuminating all. Progress and advancement come through brightness and clarity.",
@@ -1131,17 +815,8 @@ export const hexagrams = [
     chinese: "明夷",
     symbol: "䷣",
     trigrams: { upper: "Earth", lower: "Fire" },
-    judgment: "Darkening of the Light judgment",
     keywords: ["darkening", "injury", "difficult times", "persecution"],
     rulingLine: "First, one falls into the pit. Later, one calls on a dog.",
-    lines: [
-      "First, one falls into the pit. Later, one calls on a dog.",
-      "First, one falls into the pit. Later, one calls on a dog.",
-      "First, one falls into the pit. Later, one calls on a dog.",
-      "First, one falls into the pit. Later, one calls on a dog.",
-      "First, one falls into the pit. Later, one calls on a dog.",
-      "First, one falls into the pit. Later, one calls on a dog."
-    ],
     upper: {
       brief: "Darkness descends—endure with wisdom.",
       meaning: "Fire hidden beneath earth—light is hidden. Difficult times require hiding your brilliance and enduring.",
@@ -1163,17 +838,8 @@ export const hexagrams = [
     chinese: "家人",
     symbol: "䷤",
     trigrams: { upper: "Wind", lower: "Fire" },
-    judgment: "Family judgment",
     keywords: ["family", "home", "relationships", "nurturing"],
     rulingLine: "The family prospers and flourishes.",
-    lines: [
-      "The family prospers and flourishes.",
-      "The family prospers and flourishes.",
-      "The family prospers and flourishes.",
-      "The family prospers and flourishes.",
-      "The family prospers and flourishes.",
-      "The family prospers and flourishes."
-    ],
     upper: {
       brief: "Family requires order and nurturing.",
       meaning: "Wind comes forth from fire—stewardship and nourishment. Family requires proper roles and mutual care to flourish.",
@@ -1195,17 +861,8 @@ export const hexagrams = [
     chinese: "睽",
     symbol: "䷥",
     trigrams: { upper: "Fire", lower: "Lake" },
-    judgment: "Opposition judgment",
     keywords: ["opposition", "conflict", "divergence", "alienation"],
     rulingLine: "The two friends ride together.",
-    lines: [
-      "The two friends ride together.",
-      "The two friends ride together.",
-      "The two friends ride together.",
-      "The two friends ride together.",
-      "The two friends ride together.",
-      "The two friends ride together."
-    ],
     upper: {
       brief: "Opposition can be bridged.",
       meaning: "Fire above, lake below—they oppose yet together. Opposition exists but unity is possible through understanding.",
@@ -1227,17 +884,8 @@ export const hexagrams = [
     chinese: "蹇",
     symbol: "䷦",
     trigrams: { upper: "Water", lower: "Mountain" },
-    judgment: "Obstruction judgment",
     keywords: ["obstruction", "hindrance", "difficulty", "halting"],
     rulingLine: "A man pauses at a water's edge.",
-    lines: [
-      "A man pauses at a water's edge.",
-      "A man pauses at a water's edge.",
-      "A man pauses at a water's edge.",
-      "A man pauses at a water's edge.",
-      "A man pauses at a water's edge.",
-      "A man pauses at a water's edge."
-    ],
     upper: {
       brief: "Obstruction requires wise counsel.",
       meaning: "Water below mountain cannot flow—obstruction. Wise counsel and seeking help overcome difficulties.",
@@ -1259,17 +907,8 @@ export const hexagrams = [
     chinese: "解",
     symbol: "䷧",
     trigrams: { upper: "Thunder", lower: "Water" },
-    judgment: "Deliverance judgment",
     keywords: ["deliverance", "liberation", "solution", "release"],
     rulingLine: "The southern tiger has no claws.",
-    lines: [
-      "No blame.",
-      "One hunts three kinds of fox and gets a yellow graph.",
-      "One gets a carriage and has no whip.",
-      "One is freed from the stocks. One's own man brings the whip.",
-      "If one gets a companion, one calls him.",
-      "The prince shoots a hawk and hits it."
-    ],
     upper: {
       brief: "Deliverance from obstruction.",
       meaning: "Thunder and rain bring release. Deliverance comes after difficulty. The solution emerges from patience.",
@@ -1291,17 +930,8 @@ export const hexagrams = [
     chinese: "损",
     symbol: "䷨",
     trigrams: { upper: "Mountain", lower: "Lake" },
-    judgment: "Decrease judgment",
     keywords: ["decrease", "diminishment", "sacrifice", "loss"],
     rulingLine: "One proceeds and then is without blame.",
-    lines: [
-      "One proceeds and then is without blame.",
-      "One proceeds and then is without blame.",
-      "One proceeds and then is without blame.",
-      "One proceeds and then is without blame.",
-      "One proceeds and then is without blame.",
-      "One proceeds and then is without blame."
-    ],
     upper: {
       brief: "Decrease with sincerity brings gain.",
       meaning: "Lake empties into the mountain—decrease with purpose. True decrease is sacrifice, not loss. Sincerity transforms loss to gain.",
@@ -1323,17 +953,8 @@ export const hexagrams = [
     chinese: "益",
     symbol: "䷩",
     trigrams: { upper: "Wind", lower: "Thunder" },
-    judgment: "Increase judgment",
     keywords: ["increase", "growth", "expansion", "gain"],
     rulingLine: "It furthers one to have somewhere to go.",
-    lines: [
-      "It furthers one to have somewhere to go.",
-      "It furthers one to have somewhere to go.",
-      "It furthers one to have somewhere to go.",
-      "It furthers one to have somewhere to go.",
-      "It furthers one to have somewhere to go.",
-      "It furthers one to have somewhere to go."
-    ],
     upper: {
       brief: "Increase flows from true sacrifice.",
       meaning: "Thunder and wind move together—increase flows naturally. True increase comes from genuine sacrifice, not taking.",
@@ -1355,17 +976,8 @@ export const hexagrams = [
     chinese: "夬",
     symbol: "䷪",
     trigrams: { upper: "Lake", lower: "Heaven" },
-    judgment: "Resolution judgment",
     keywords: ["resolution", "breakthrough", "determination", "decisive action"],
     rulingLine: "The weak moon fights the strong sun.",
-    lines: [
-      "A strong shoulder-blade. No blame.",
-      "Danger. One weeps and sighs. No blame.",
-      "The strong moon fights the strong sun. One falls to the ground.",
-      "The strong moon fights the strong sun. One is without blame.",
-      "The strong moon fights the strong sun. One falls to the ground.",
-      "The strong moon fights the strong sun. One is without blame."
-    ],
     upper: {
       brief: "Resolution requires decisive action.",
       meaning: "Lake rises to heaven—water breaks through. Resolution requires decisive action to overcome stubborn obstacles.",
@@ -1387,17 +999,8 @@ export const hexagrams = [
     chinese: "姤",
     symbol: "䷫",
     trigrams: { upper: "Heaven", lower: "Wind" },
-    judgment: "Coupling judgment",
     keywords: ["coupling", "meeting", "temptation", "confronting"],
     rulingLine: "One should not marry this woman.",
-    lines: [
-      "One should not marry this woman.",
-      "One should not marry this woman.",
-      "One should not marry this woman.",
-      "One should not marry this woman.",
-      "One should not marry this woman.",
-      "One should not marry this woman."
-    ],
     upper: {
       brief: "Meeting requires discernment.",
       meaning: "Wind moves beneath heaven—meeting unexpectedly. Not all meetings are beneficial. Discernment is essential.",
@@ -1419,17 +1022,8 @@ export const hexagrams = [
     chinese: "萃",
     symbol: "䷬",
     trigrams: { upper: "Lake", lower: "Earth" },
-    judgment: "Gathering judgment",
     keywords: ["gathering", "assembly", "convergence", "consecration"],
     rulingLine: "The gathered ones weep and sigh.",
-    lines: [
-      "The gathered ones weep and sigh.",
-      "The gathered ones weep and sigh.",
-      "The gathered ones weep and sigh.",
-      "The gathered ones weep and sigh.",
-      "The gathered ones weep and sigh.",
-      "The gathered ones weep and sigh."
-    ],
     upper: {
       brief: "Gathering requires true leadership.",
       meaning: "Lake rests upon earth—gathering of waters. True gathering requires leadership and shared sorrow before joy.",
@@ -1451,17 +1045,8 @@ export const hexagrams = [
     chinese: "升",
     symbol: "䷭",
     trigrams: { upper: "Earth", lower: "Wind" },
-    judgment: "Pushing Upward judgment",
     keywords: ["pushing upward", "growth", "ascending", "perseverance"],
     rulingLine: "One climbs to the top of the mountain.",
-    lines: [
-      "One climbs to the top of the mountain.",
-      "One climbs to the top of the mountain.",
-      "One climbs to the top of the mountain.",
-      "One climbs to the top of the mountain.",
-      "One climbs to the top of the mountain.",
-      "One climbs to the top of the mountain."
-    ],
     upper: {
       brief: "Push upward through perseverance.",
       meaning: "Wind rises from the earth—gradual growth upward. Pushing upward requires patience and gathering strength.",
@@ -1483,17 +1068,8 @@ export const hexagrams = [
     chinese: "困",
     symbol: "䷮",
     trigrams: { upper: "Lake", lower: "Water" },
-    judgment: "Oppression judgment",
     keywords: ["oppression", "exhaustion", "entrapment", "confinement"],
     rulingLine: "One is so exhausted that one has no strength to speak.",
-    lines: [
-      "One is so exhausted that one has no strength to speak.",
-      "One is so exhausted that one has no strength to speak.",
-      "One is so exhausted that one has no strength to speak.",
-      "One is so exhausted that one has no strength to speak.",
-      "One is so exhausted that one has no strength to speak.",
-      "One is so exhausted that one has no strength to speak."
-    ],
     upper: {
       brief: "Oppression exhausts but also reveals truth.",
       meaning: "Water in the lake has no outflow—oppression and exhaustion. Truth emerges under pressure. Release comes through inner strength.",
@@ -1515,17 +1091,8 @@ export const hexagrams = [
     chinese: "井",
     symbol: "䷯",
     trigrams: { upper: "Water", lower: "Wind" },
-    judgment: "The Well judgment",
     keywords: ["well", "water source", "foundation", "community"],
     rulingLine: "The well is cleaned and no one uses it.",
-    lines: [
-      "The well is cleaned and no one uses it.",
-      "The well is cleaned and no one uses it.",
-      "The well is cleaned and no one uses it.",
-      "The well is cleaned and no one uses it.",
-      "The well is cleaned and no one uses it.",
-      "The well is cleaned and no one uses it."
-    ],
     upper: {
       brief: "The well nourishes the community.",
       meaning: "Wind moves over water—drawing from the well. The community depends on the well's unchanging nature. Foundations sustain life.",
@@ -1547,17 +1114,8 @@ export const hexagrams = [
     chinese: "革",
     symbol: "䷰",
     trigrams: { upper: "Lake", lower: "Fire" },
-    judgment: "Revolution judgment",
     keywords: ["revolution", "transformation", "radical change", "reform"],
     rulingLine: "One bathes in the morning.",
-    lines: [
-      "One bathes in the morning.",
-      "One bathes in the morning.",
-      "One bathes in the morning.",
-      "One bathes in the morning.",
-      "One bathes in the morning.",
-      "One bathes in the morning."
-    ],
     upper: {
       brief: "Revolution transforms through truth.",
       meaning: "Fire transforms lake—radical change. Revolution must be justified and timed correctly. Truth transforms, not force.",
@@ -1579,17 +1137,8 @@ export const hexagrams = [
     chinese: "鼎",
     symbol: "䷱",
     trigrams: { upper: "Fire", lower: "Wind" },
-    judgment: "The Cauldron judgment",
     keywords: ["cauldron", "vessel", "nourishment", "ritual"],
     rulingLine: "The great man rules as with a furnace.",
-    lines: [
-      "The great man rules as with a furnace.",
-      "The great man rules as with a furnace.",
-      "The great man rules as with a furnace.",
-      "The great man rules as with a furnace.",
-      "The great man rules as with a furnace.",
-      "The great man rules as with a furnace."
-    ],
     upper: {
       brief: "The cauldron transforms through fire.",
       meaning: "Fire beneath wind—the cauldron transforms what it holds. The vessel of civilization nourishes and transforms.",
@@ -1611,17 +1160,8 @@ export const hexagrams = [
     chinese: "震",
     symbol: "䷲",
     trigrams: { upper: "Thunder", lower: "Thunder" },
-    judgment: "Arousing judgment",
     keywords: ["arousing", "thunder", "shock", "movement"],
     rulingLine: "The frightful shock dissipates.",
-    lines: [
-      "The frightful shock dissipates.",
-      "The frightful shock dissipates.",
-      "The frightful shock dissipates.",
-      "The frightful shock dissipates.",
-      "The frightful shock dissipates.",
-      "The frightful shock dissipates."
-    ],
     upper: {
       brief: "Shock brings arousal and awakening.",
       meaning: "Thunder doubled—the shock that awakens. Arousing through fear can be beneficial. Shock brings movement from stagnation.",
@@ -1643,17 +1183,8 @@ export const hexagrams = [
     chinese: "艮",
     symbol: "䷳",
     trigrams: { upper: "Mountain", lower: "Mountain" },
-    judgment: "Keeping Still judgment",
     keywords: ["keeping still", "mountain", "stopping", "meditation"],
     rulingLine: "One does not eat one's own flour.",
-    lines: [
-      "One does not eat one's own flour.",
-      "One does not eat one's own flour.",
-      "One does not eat one's own flour.",
-      "One does not eat one's own flour.",
-      "One does not eat one's own flour.",
-      "One does not eat one's own flour."
-    ],
     upper: {
       brief: "Keeping still brings accomplishment.",
       meaning: "Mountain doubled—stilling the mind. Stillness is not inactivity but purposeful restraint. Meditative focus accomplishes.",
@@ -1675,17 +1206,8 @@ export const hexagrams = [
     chinese: "渐",
     symbol: "䷴",
     trigrams: { upper: "Wind", lower: "Mountain" },
-    judgment: "Development judgment",
     keywords: ["development", "gradual progress", "marriage", "sequence"],
     rulingLine: "The bird in the forest is the way.",
-    lines: [
-      "The bird in the forest is the way.",
-      "The bird in the forest is the way.",
-      "The bird in the forest is the way.",
-      "The bird in the forest is the way.",
-      "The bird in the forest is the way.",
-      "The bird in the forest is the way."
-    ],
     upper: {
       brief: "Development through gradual advancement.",
       meaning: "Wind moves over mountain—gradual progression. Development requires patience and proper sequence. Marriage develops slowly.",
@@ -1707,17 +1229,8 @@ export const hexagrams = [
     chinese: "归妹",
     symbol: "䷵",
     trigrams: { upper: "Thunder", lower: "Lake" },
-    judgment: "Marrying judgment",
     keywords: ["marrying", "maiden", "union", "partnership"],
     rulingLine: "One marries one's daughter.",
-    lines: [
-      "One marries one's daughter.",
-      "One marries one's daughter.",
-      "One marries one's daughter.",
-      "One marries one's daughter.",
-      "One marries one's daughter.",
-      "One marries one's daughter."
-    ],
     upper: {
       brief: "Marriage has proper form and meaning.",
       meaning: "Thunder beneath lake—young maiden beneath true nature. Marriage must have proper form and genuine connection.",
@@ -1739,17 +1252,8 @@ export const hexagrams = [
     chinese: "丰",
     symbol: "䷶",
     trigrams: { upper: "Thunder", lower: "Fire" },
-    judgment: "Abundance judgment",
     keywords: ["abundance", "fullness", "richness", "plenitude"],
     rulingLine: "One's own side is destroyed. One's own side is preserved.",
-    lines: [
-      "One's own side is destroyed. One's own side is preserved.",
-      "One's own side is destroyed. One's own side is preserved.",
-      "One's own side is destroyed. One's own side is preserved.",
-      "One's own side is destroyed. One's own side is preserved.",
-      "One's own side is destroyed. One's own side is preserved.",
-      "One's own side is destroyed. One's own side is preserved."
-    ],
     upper: {
       brief: "Abundance peaks then diminishes.",
       meaning: "Thunder and fire together—great brightness and abundance. Abundance reaches its peak, but decline follows fullness.",
@@ -1771,17 +1275,8 @@ export const hexagrams = [
     chinese: "旅",
     symbol: "䷷",
     trigrams: { upper: "Fire", lower: "Mountain" },
-    judgment: "Traveler judgment",
     keywords: ["traveler", "wandering", "journey", "stranger"],
     rulingLine: "The bird burns its nest.",
-    lines: [
-      "The bird burns its nest.",
-      "The bird burns its nest.",
-      "The bird burns its nest.",
-      "The bird burns its nest.",
-      "The bird burns its nest.",
-      "The bird burns its nest."
-    ],
     upper: {
       brief: "The traveler finds temporary shelter.",
       meaning: "Fire on the mountain—the traveler's light. The wanderer must adapt and find shelter among strangers.",
@@ -1803,17 +1298,8 @@ export const hexagrams = [
     chinese: "巽",
     symbol: "䷸",
     trigrams: { upper: "Wind", lower: "Wind" },
-    judgment: "Gentle judgment",
     keywords: ["gentle", "penetration", "flexibility", "wood"],
     rulingLine: "The wings of the crane are in the abyss.",
-    lines: [
-      "The wings of the crane are in the abyss.",
-      "The wings of the crane are in the abyss.",
-      "The wings of the crane are in the abyss.",
-      "The wings of the crane are in the abyss.",
-      "The wings of the crane are in the abyss.",
-      "The wings of the crane are in the abyss."
-    ],
     upper: {
       brief: "Gentleness penetrates where force cannot.",
       meaning: "Wind doubled—penetrating gentleness. True strength lies in flexibility and persistence, not force. Gentle penetration accomplishes much.",
@@ -1835,17 +1321,8 @@ export const hexagrams = [
     chinese: "兑",
     symbol: "䷹",
     trigrams: { upper: "Lake", lower: "Lake" },
-    judgment: "Joy judgment",
     keywords: ["joy", "satisfaction", "pleasure", "harmony"],
     rulingLine: "One deceives the hawk and catches it.",
-    lines: [
-      "One deceives the hawk and catches it.",
-      "One deceives the hawk and catches it.",
-      "One deceives the hawk and catches it.",
-      "One deceives the hawk and catches it.",
-      "One deceives the hawk and catches it.",
-      "One deceives the hawk and catches it."
-    ],
     upper: {
       brief: "Joy shared multiplies.",
       meaning: "Lake doubled—joy doubled. True joy comes from harmony and shared pleasure. Sincere joy attracts and benefits.",
@@ -1867,17 +1344,8 @@ export const hexagrams = [
     chinese: "涣",
     symbol: "䷺",
     trigrams: { upper: "Wind", lower: "Water" },
-    judgment: "Dispersion judgment",
     keywords: ["dispersion", "dissolution", "scattering", "liberation"],
     rulingLine: "The king scatters the people.",
-    lines: [
-      "The king scatters the people.",
-      "The king scatters the people.",
-      "The king scatters the people.",
-      "The king scatters the people.",
-      "The king scatters the people.",
-      "The king scatters the people."
-    ],
     upper: {
       brief: "Dispersion breaks barriers.",
       meaning: "Wind over water—dispersing mists. Dispersion can liberate or destroy. Proper dispersion benefits, harmful dispersion harms.",
@@ -1899,17 +1367,8 @@ export const hexagrams = [
     chinese: "节",
     symbol: "䷻",
     trigrams: { upper: "Water", lower: "Lake" },
-    judgment: "Limitation judgment",
     keywords: ["limitation", "restraint", "measure", "boundary"],
     rulingLine: "One is not limited in one's limitation.",
-    lines: [
-      "One is not limited in one's limitation.",
-      "One is not limited in one's limitation.",
-      "One is not limited in one's limitation.",
-      "One is not limited in one's limitation.",
-      "One is not limited in one's limitation.",
-      "One is not limited in one's limitation."
-    ],
     upper: {
       brief: "Limitation creates order and freedom.",
       meaning: "Water entering the lake is limited by the shore. True limitation creates freedom through order. Restraint enables success.",
@@ -1931,17 +1390,8 @@ export const hexagrams = [
     chinese: "中孚",
     symbol: "䷼",
     trigrams: { upper: "Wind", lower: "Lake" },
-    judgment: "Inner Truth judgment",
     keywords: ["inner truth", "sincerity", "pig", "frog"],
     rulingLine: "The crane calls in the hidden valley.",
-    lines: [
-      "The crane calls in the hidden valley.",
-      "The crane calls in the hidden valley.",
-      "The crane calls in the hidden valley.",
-      "The crane calls in the hidden valley.",
-      "The crane calls in the hidden valley.",
-      "The crane calls in the hidden valley."
-    ],
     upper: {
       brief: "Inner truth and sincerity bring success.",
       meaning: "Wind over lake—truth within. Inner truth is sincere and powerful. The heart's truth resonates across distance.",
@@ -1963,17 +1413,8 @@ export const hexagrams = [
     chinese: "小过",
     symbol: "䷽",
     trigrams: { upper: "Thunder", lower: "Mountain" },
-    judgment: "Small Exceeding judgment",
     keywords: ["small exceeding", "excess", "birds", "carefulness"],
     rulingLine: "The flying bird brings misfortune.",
-    lines: [
-      "The flying bird brings misfortune.",
-      "The flying bird brings misfortune.",
-      "The flying bird brings misfortune.",
-      "The flying bird brings misfortune.",
-      "The flying bird brings misfortune.",
-      "The flying bird brings misfortune."
-    ],
     upper: {
       brief: "Small exceeding requires great care.",
       meaning: "Thunder on the mountain—small excess requires great caution. Minor transgressions must be carefully managed.",
@@ -1995,17 +1436,8 @@ export const hexagrams = [
     chinese: "既济",
     symbol: "䷾",
     trigrams: { upper: "Water", lower: "Fire" },
-    judgment: "After Completion judgment",
     keywords: ["after completion", "crossing water", "order", "success"],
     rulingLine: "One's own side is preserved.",
-    lines: [
-      "One's own side is preserved.",
-      "One's own side is preserved.",
-      "One's own side is preserved.",
-      "One's own side is preserved.",
-      "One's own side is preserved.",
-      "One's own side is preserved."
-    ],
     upper: {
       brief: "After completion, new cycles begin.",
       meaning: "Fire below water—they oppose yet balance. After completion, new difficulties emerge. Success contains the seed of failure.",
@@ -2027,17 +1459,8 @@ export const hexagrams = [
     chinese: "未济",
     symbol: "䷿",
     trigrams: { upper: "Fire", lower: "Water" },
-    judgment: "Before Completion judgment",
     keywords: ["before completion", "not yet crossed", "potential", "incompletion"],
     rulingLine: "One falls into the water.",
-    lines: [
-      "One falls into the water.",
-      "One falls into the water.",
-      "One falls into the water.",
-      "One falls into the water.",
-      "One falls into the water.",
-      "One falls into the water."
-    ],
     upper: {
       brief: "Before completion, anything is possible.",
       meaning: "Water below fire—not yet balanced. Before completion, success is not assured. The fox near the far shore may yet fail.",
