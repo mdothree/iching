@@ -173,7 +173,7 @@
                             <li>✨ Custom affirmation</li>
                         </ul>
                         <button class="btn-premium" id="upgrade-btn">
-                            Get Premium Reading - $4.99
+                            Get Premium Reading - <span data-price="single-premium">$5</span>
                         </button>
                     </div>
 
@@ -208,7 +208,7 @@
                     <li>✨ Custom affirmation</li>
                 </ul>
                 <button class="btn-premium modal-btn" id="modal-upgrade-btn" onclick="handlePremiumPurchase()">
-                    Get Premium - $4.99
+                    Get Premium - <span data-price="single-premium">$5</span>
                 </button>
                 <button class="modal-skip" id="modal-skip">Maybe Later</button>
             </div>
@@ -250,21 +250,10 @@
             <div class="container">
                 <h2>Pricing</h2>
                 <div class="pricing-cards">
-                    <div class="pricing-card">
-                        <h3>Basic</h3>
-                        <div class="price">$0</div>
-                        <ul>
-                            <li>Coin casting simulation</li>
-                            <li>Basic hexagram meanings</li>
-                            <li>Unlimited readings</li>
-                            <li>Share readings</li>
-                        </ul>
-                        <button class="btn-secondary" id="start-reading-btn">Start Reading</button>
-                    </div>
                     <div class="pricing-card featured">
                         <div class="badge">Most Popular</div>
                         <h3>Premium</h3>
-                        <div class="price">$4.99</div>
+                        <div class="price" data-price="single-premium">$5</div>
                         <ul>
                             <li>AI-powered interpretations</li>
                             <li>Personalized guidance</li>
@@ -290,6 +279,7 @@
 
     <!-- Firebase is optional and lazy-loaded by js/config/firebase.js (off by default). -->
 
+    <script src="js/price-display.js"></script>
     <script src="js/entitlement.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>
