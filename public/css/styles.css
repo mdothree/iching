@@ -224,7 +224,7 @@ header nav {
 
 .casting-instruction {
     color: var(--text-muted);
-    font-style: italic;
+    font-style: normal;
     margin-bottom: 20px;
 }
 
@@ -858,3 +858,6 @@ footer p {
     .nav-links { flex-wrap: nowrap; justify-content: flex-end; gap: 10px; }
     .nav-links a { font-size: .8rem; white-space: nowrap; }
 }
+
+/* No italics (Principal 10-16): emphasis by colour or weight. */
+em, i, cite, q, dfn, var, address { font-style: normal; }
