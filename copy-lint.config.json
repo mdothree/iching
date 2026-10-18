@@ -1,0 +1,14 @@
+{
+  "allow": [
+    {
+      "file": "src/ichingDatabase.js",
+      "re": "can free or scatter",
+      "why": "hexagram guidance text, not an offer"
+    },
+    {
+      "file": "public/src/ichingDatabase.js",
+      "re": "can free or scatter",
+      "why": "hexagram guidance text, not an offer"
+    }
+  ]
+}
